@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "CANRxLib")(type "KiCad")(uri "${KIPRJMOD}/CANRxLib.kicad_sym")(options "")(descr ""))
+  (lib (name "STM32Connectors")(type "KiCad")(uri "${KIPRJMOD}/STM32Connectors.kicad_sym")(options "")(descr ""))
+)
