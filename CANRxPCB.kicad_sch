@@ -1500,6 +1500,58 @@
         )
       )
     )
+    (symbol "power:+12VA" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+12VA" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+12VA\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+12VA_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+12VA_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+12VA" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -1548,58 +1600,6 @@
       (symbol "+3.3V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
           (name "+3.3V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+5V" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+5V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+5V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+5V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -1778,17 +1778,14 @@
     )
   )
 
-  (junction (at 48.26 158.75) (diameter 0) (color 0 0 0 0)
-    (uuid 0bcca6cc-f7b7-4f74-8d38-ad5608a940cf)
-  )
   (junction (at 93.98 66.04) (diameter 0) (color 0 0 0 0)
     (uuid 15f59056-a221-4601-8440-e3d5ce641ca3)
   )
   (junction (at 30.48 33.02) (diameter 0) (color 0 0 0 0)
     (uuid 16b52168-733a-4552-b391-d24095a8723c)
   )
-  (junction (at 40.64 148.59) (diameter 0) (color 0 0 0 0)
-    (uuid 2276d79e-b471-409f-898f-962c64f7ceb7)
+  (junction (at 40.64 168.91) (diameter 0) (color 0 0 0 0)
+    (uuid 1a3d5b2b-702f-4d3a-9317-efb71d82e4d3)
   )
   (junction (at 22.86 74.93) (diameter 0) (color 0 0 0 0)
     (uuid 28c20ccd-7e84-4df8-824c-5456df5637e5)
@@ -1808,9 +1805,6 @@
   (junction (at 167.64 105.41) (diameter 0) (color 0 0 0 0)
     (uuid 523ed780-3adb-438e-8785-480ea7fc3f9f)
   )
-  (junction (at 40.64 158.75) (diameter 0) (color 0 0 0 0)
-    (uuid 62d10346-9c98-4f0e-a475-b243433ed23f)
-  )
   (junction (at 152.4 36.83) (diameter 0) (color 0 0 0 0)
     (uuid 80c28f10-6a24-489c-b536-575d7bf6f3ad)
   )
@@ -1823,11 +1817,20 @@
   (junction (at 100.33 29.21) (diameter 0) (color 0 0 0 0)
     (uuid b108492d-f54c-40ff-a9a5-fcea5d6f0000)
   )
-  (junction (at 40.64 168.91) (diameter 0) (color 0 0 0 0)
-    (uuid e66ae786-8955-4c1f-ae8e-d0078d11f070)
+  (junction (at 40.64 165.1) (diameter 0) (color 0 0 0 0)
+    (uuid cf65204d-2263-40d7-a8ed-f413076d340a)
+  )
+  (junction (at 40.64 161.29) (diameter 0) (color 0 0 0 0)
+    (uuid dcf17a72-c6b6-4110-b409-51e9e4c951c9)
+  )
+  (junction (at 40.64 176.53) (diameter 0) (color 0 0 0 0)
+    (uuid e57bed59-fb9b-49c6-80a4-4ed23c6e1a4d)
   )
   (junction (at 35.56 91.44) (diameter 0) (color 0 0 0 0)
     (uuid f0dadc3b-36fa-4714-bc10-fa8b06515d87)
+  )
+  (junction (at 40.64 153.67) (diameter 0) (color 0 0 0 0)
+    (uuid f9bb7de9-77b4-4557-9a6c-4d6f691011e4)
   )
 
   (no_connect (at 210.82 148.59) (uuid 027cfa66-9cad-4c65-852e-5c4300c99ea3))
@@ -1977,10 +1980,6 @@
     (stroke (width 0) (type default))
     (uuid 140ef8a5-ba75-4c98-bf64-81fc434f9857)
   )
-  (wire (pts (xy 48.26 158.75) (xy 40.64 158.75))
-    (stroke (width 0) (type default))
-    (uuid 1490cd38-5462-4e99-9e55-fe021c072586)
-  )
   (wire (pts (xy 93.98 176.53) (xy 102.87 176.53))
     (stroke (width 0) (type default))
     (uuid 1720e5b9-9d3a-4c39-b8c2-a1dc1909f901)
@@ -2029,19 +2028,19 @@
     (stroke (width 0) (type default))
     (uuid 31469930-1898-4c6f-86b9-47b962675922)
   )
+  (wire (pts (xy 40.64 146.05) (xy 40.64 153.67))
+    (stroke (width 0) (type default))
+    (uuid 316650dd-459f-4bfa-98cd-e838d6de0a2c)
+  )
   (wire (pts (xy 166.37 105.41) (xy 167.64 105.41))
     (stroke (width 0) (type default))
     (uuid 320eec32-d35f-4948-a9a0-3430db4f3e70)
-  )
-  (wire (pts (xy 40.64 157.48) (xy 40.64 158.75))
-    (stroke (width 0) (type default))
-    (uuid 32706376-aa4f-41bc-a5df-178794039c04)
   )
   (wire (pts (xy 203.2 153.67) (xy 210.82 153.67))
     (stroke (width 0) (type default))
     (uuid 34186a87-c6ed-4316-952d-306e9c586049)
   )
-  (wire (pts (xy 40.64 168.91) (xy 48.26 168.91))
+  (wire (pts (xy 40.64 176.53) (xy 49.53 176.53))
     (stroke (width 0) (type default))
     (uuid 36201506-09a4-414b-910e-354529135d04)
   )
@@ -2053,6 +2052,10 @@
     (stroke (width 0) (type default))
     (uuid 37e51256-f6f5-4b0c-b902-1f70dc5fcc3e)
   )
+  (wire (pts (xy 49.53 176.53) (xy 49.53 173.99))
+    (stroke (width 0) (type default))
+    (uuid 3a6cc776-3309-4a39-93cf-63b5bf1737a5)
+  )
   (wire (pts (xy 102.87 133.35) (xy 110.49 133.35))
     (stroke (width 0) (type default))
     (uuid 3ac9fb84-7afd-4fe0-b496-2884646d6c21)
@@ -2060,10 +2063,6 @@
   (wire (pts (xy 175.26 110.49) (xy 182.88 110.49))
     (stroke (width 0) (type default))
     (uuid 3ce83f4d-305c-42cc-bb8f-4de8fb15f7bb)
-  )
-  (wire (pts (xy 48.26 163.83) (xy 48.26 158.75))
-    (stroke (width 0) (type default))
-    (uuid 3d2aedc2-6ab0-4549-bfeb-bd83c709a91a)
   )
   (wire (pts (xy 130.81 68.58) (xy 138.43 68.58))
     (stroke (width 0) (type default))
@@ -2076,6 +2075,10 @@
   (wire (pts (xy 175.26 151.13) (xy 182.88 151.13))
     (stroke (width 0) (type default))
     (uuid 3e0e22cf-2114-4024-b339-56eb917c0e16)
+  )
+  (wire (pts (xy 49.53 168.91) (xy 40.64 168.91))
+    (stroke (width 0) (type default))
+    (uuid 3e87b52f-f83d-4d53-80d1-73e006773536)
   )
   (wire (pts (xy 102.87 128.27) (xy 110.49 128.27))
     (stroke (width 0) (type default))
@@ -2149,15 +2152,11 @@
     (stroke (width 0) (type default))
     (uuid 53216506-09d0-4452-b71f-46f3964b8293)
   )
-  (wire (pts (xy 40.64 167.64) (xy 40.64 168.91))
-    (stroke (width 0) (type default))
-    (uuid 53f590ac-b13a-4a32-b9c7-bdfc0fd2ae28)
-  )
   (wire (pts (xy 152.4 36.83) (xy 148.59 36.83))
     (stroke (width 0) (type default))
     (uuid 540af81c-58d0-40d9-903a-45c9f7308b47)
   )
-  (wire (pts (xy 40.64 148.59) (xy 48.26 148.59))
+  (wire (pts (xy 40.64 153.67) (xy 48.26 153.67))
     (stroke (width 0) (type default))
     (uuid 54b20510-e604-49b0-a554-8dbb9b33bc83)
   )
@@ -2169,7 +2168,7 @@
     (stroke (width 0) (type default))
     (uuid 583fa983-590c-4f3e-9210-3f75c161fc61)
   )
-  (wire (pts (xy 29.21 158.75) (xy 40.64 158.75))
+  (wire (pts (xy 38.1 165.1) (xy 40.64 165.1))
     (stroke (width 0) (type default))
     (uuid 592ed5bf-729d-4ce4-94e5-8d8ffb44163e)
   )
@@ -2200,10 +2199,6 @@
   (wire (pts (xy 130.81 130.81) (xy 138.43 130.81))
     (stroke (width 0) (type default))
     (uuid 608437f3-9ebf-44a7-8fae-562c017a58af)
-  )
-  (wire (pts (xy 40.64 138.43) (xy 40.64 139.7))
-    (stroke (width 0) (type default))
-    (uuid 61a8bb26-7352-4f5a-994e-fddba833a613)
   )
   (wire (pts (xy 201.93 27.94) (xy 185.42 27.94))
     (stroke (width 0) (type default))
@@ -2305,6 +2300,10 @@
     (stroke (width 0) (type default))
     (uuid 824096de-99b4-492f-9709-9f15e39ea8ce)
   )
+  (wire (pts (xy 48.26 161.29) (xy 40.64 161.29))
+    (stroke (width 0) (type default))
+    (uuid 831f69ed-7762-4959-8ff2-445f2edcc4ea)
+  )
   (wire (pts (xy 241.3 45.72) (xy 233.68 45.72))
     (stroke (width 0) (type default))
     (uuid 852909a1-9e4f-4770-ace9-49f77b0bdbee)
@@ -2324,6 +2323,10 @@
   (wire (pts (xy 50.8 95.25) (xy 48.26 95.25))
     (stroke (width 0) (type default))
     (uuid 8cd08bb8-4d5d-4f76-9287-970266fc17b5)
+  )
+  (wire (pts (xy 49.53 171.45) (xy 49.53 168.91))
+    (stroke (width 0) (type default))
+    (uuid 8dc91def-8c71-438f-b32a-ea00f9a36b62)
   )
   (wire (pts (xy 251.46 92.71) (xy 255.27 92.71))
     (stroke (width 0) (type default))
@@ -2392,6 +2395,10 @@
   (wire (pts (xy 55.88 63.5) (xy 57.15 63.5))
     (stroke (width 0) (type default))
     (uuid 982091e7-5a07-440c-b0f6-c1fb641af8d0)
+  )
+  (wire (pts (xy 48.26 158.75) (xy 48.26 161.29))
+    (stroke (width 0) (type default))
+    (uuid 9a0ce877-ee01-4161-92d6-18152e44726c)
   )
   (wire (pts (xy 203.2 115.57) (xy 210.82 115.57))
     (stroke (width 0) (type default))
@@ -2477,6 +2484,10 @@
     (stroke (width 0) (type default))
     (uuid b20be5df-f79e-47f0-81d9-5d71d9b40b6f)
   )
+  (wire (pts (xy 17.78 165.1) (xy 30.48 165.1))
+    (stroke (width 0) (type default))
+    (uuid b2445882-4c6e-483b-b949-de1657151e12)
+  )
   (wire (pts (xy 130.81 66.04) (xy 138.43 66.04))
     (stroke (width 0) (type default))
     (uuid b2763c4a-5e49-454c-b916-6a7b82655228)
@@ -2500,10 +2511,6 @@
   (wire (pts (xy 130.81 78.74) (xy 138.43 78.74))
     (stroke (width 0) (type default))
     (uuid b3ee2128-e334-4f6f-9c90-3bcdec5c55b8)
-  )
-  (wire (pts (xy 40.64 179.07) (xy 40.64 180.34))
-    (stroke (width 0) (type default))
-    (uuid b6da1867-ce4d-46db-8c1c-bdc1f80e9d8f)
   )
   (wire (pts (xy 130.81 140.97) (xy 138.43 140.97))
     (stroke (width 0) (type default))
@@ -2529,10 +2536,6 @@
     (stroke (width 0) (type default))
     (uuid bc18f8de-3342-42df-a0e5-0b0b049dd295)
   )
-  (wire (pts (xy 40.64 148.59) (xy 40.64 149.86))
-    (stroke (width 0) (type default))
-    (uuid bddef789-9791-4992-a2f9-9d6f941744d0)
-  )
   (wire (pts (xy 35.56 105.41) (xy 45.72 105.41))
     (stroke (width 0) (type default))
     (uuid be1baa3e-3db9-4535-894d-1191727e1f78)
@@ -2549,10 +2552,6 @@
     (stroke (width 0) (type default))
     (uuid c016738c-8339-485b-94e3-e31f5465301d)
   )
-  (wire (pts (xy 40.64 168.91) (xy 40.64 171.45))
-    (stroke (width 0) (type default))
-    (uuid c08e6cb6-af37-4833-a096-716e998816ce)
-  )
   (wire (pts (xy 203.2 161.29) (xy 210.82 161.29))
     (stroke (width 0) (type default))
     (uuid c134d140-0e83-447d-ba87-39a77c3db500)
@@ -2564,10 +2563,6 @@
   (wire (pts (xy 274.32 53.34) (xy 271.78 53.34))
     (stroke (width 0) (type default))
     (uuid c2dd78a9-41ec-4dec-9eba-5c896ddba4a8)
-  )
-  (wire (pts (xy 48.26 166.37) (xy 48.26 168.91))
-    (stroke (width 0) (type default))
-    (uuid c374b4ef-d3c5-4854-8a79-a8eef578697c)
   )
   (wire (pts (xy 130.81 133.35) (xy 138.43 133.35))
     (stroke (width 0) (type default))
@@ -2597,7 +2592,7 @@
     (stroke (width 0) (type default))
     (uuid cc0a334a-ba02-40a0-97c6-4e80d037ea31)
   )
-  (wire (pts (xy 40.64 160.02) (xy 40.64 158.75))
+  (wire (pts (xy 40.64 168.91) (xy 40.64 165.1))
     (stroke (width 0) (type default))
     (uuid ceca9332-f8ad-49ef-ba30-8fa451e2c9c7)
   )
@@ -2620,6 +2615,10 @@
   (wire (pts (xy 167.64 104.14) (xy 167.64 105.41))
     (stroke (width 0) (type default))
     (uuid d76713e7-48c7-4cd9-ae29-caccb5c8961b)
+  )
+  (wire (pts (xy 40.64 161.29) (xy 40.64 165.1))
+    (stroke (width 0) (type default))
+    (uuid d80e5c1e-86bc-4d84-986d-afac16e75aed)
   )
   (wire (pts (xy 203.2 78.74) (xy 210.82 78.74))
     (stroke (width 0) (type default))
@@ -2653,10 +2652,6 @@
     (stroke (width 0) (type default))
     (uuid e0cd13d8-f363-4dd7-9a2e-590eb8d7cc6b)
   )
-  (wire (pts (xy 40.64 147.32) (xy 40.64 148.59))
-    (stroke (width 0) (type default))
-    (uuid e233086a-094b-43e3-8b84-bf7cb7c4f2de)
-  )
   (wire (pts (xy 93.98 166.37) (xy 102.87 166.37))
     (stroke (width 0) (type default))
     (uuid e305ef15-0cba-4bb3-a07a-abf88bd125d3)
@@ -2668,10 +2663,6 @@
   (wire (pts (xy 99.06 71.12) (xy 110.49 71.12))
     (stroke (width 0) (type default))
     (uuid e6fbe3a4-2bdd-4de2-894d-e64395a282c6)
-  )
-  (wire (pts (xy 48.26 154.94) (xy 48.26 158.75))
-    (stroke (width 0) (type default))
-    (uuid e7d449fc-d19a-4470-8b04-b3572091278d)
   )
   (wire (pts (xy 30.48 33.02) (xy 22.86 33.02))
     (stroke (width 0) (type default))
@@ -2717,11 +2708,15 @@
     (stroke (width 0) (type default))
     (uuid f74e314e-047b-427a-a58c-93a10b6146ca)
   )
+  (wire (pts (xy 40.64 176.53) (xy 40.64 179.07))
+    (stroke (width 0) (type default))
+    (uuid f81bcc0f-8fce-4cf5-b76a-f8c72b6427e2)
+  )
   (wire (pts (xy 203.2 102.87) (xy 210.82 102.87))
     (stroke (width 0) (type default))
     (uuid fa6b9518-b328-4c35-879a-61fd66a8d8f3)
   )
-  (wire (pts (xy 48.26 148.59) (xy 48.26 152.4))
+  (wire (pts (xy 48.26 153.67) (xy 48.26 156.21))
     (stroke (width 0) (type default))
     (uuid fbd60179-c2a9-4508-9311-0f16d189d37b)
   )
@@ -2806,7 +2801,7 @@
     (effects (font (size 1.524 1.524)) (justify right bottom))
     (uuid 592fa60c-11e3-4956-862f-0bdddd57f4de)
   )
-  (text "StatusSignal IO" (at 17.78 161.29 0)
+  (text "StatusSignal IO" (at 13.97 170.18 0)
     (effects (font (size 1.524 1.524)) (justify left bottom))
     (uuid 5d6a9002-a58d-446c-91f0-b7310b2831a6)
   )
@@ -3035,10 +3030,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3f024e8f-fcde-4f69-b47c-5c820314a68a)
   )
-  (label "PG0" (at 29.21 158.75 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 41cd8bab-7a81-4842-8a6f-f1a2d93604ed)
-  )
   (label "PD0" (at 193.04 30.48 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 4c127e13-a49d-48b0-ab9c-23ad8967c94c)
@@ -3054,6 +3045,10 @@
   (label "PB2" (at 175.26 120.65 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 51342e10-bb4a-47bb-af0f-ed4056a2bcb3)
+  )
+  (label "PG0" (at 17.78 165.1 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 563dc6e1-51b5-4f2c-859d-69451cb37356)
   )
   (label "PA0" (at 175.26 156.21 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -3336,35 +3331,10 @@
     (uuid fefe83e1-cd29-406c-bce6-473e66d10a43)
   )
 
-  (symbol (lib_id "power:+5V") (at 152.4 35.56 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 003bc12d-b27c-41b7-9185-f47af9b13d84)
-    (property "Reference" "#PWR03" (at 152.4 39.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 152.4 30.48 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 152.4 35.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 152.4 35.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid eee24d02-e1fc-47a7-8163-f7b00fc4bd7a))
-    (instances
-      (project "CANRxPCB"
-        (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:+5VD") (at 251.46 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 00ea36e4-d9d5-49a5-a52e-fca5ca6ad63a)
-    (property "Reference" "#PWR020" (at 251.46 95.25 0)
+    (property "Reference" "#PWR034" (at 251.46 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VD" (at 251.46 86.36 0)
@@ -3380,7 +3350,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR034") (unit 1)
         )
       )
     )
@@ -3444,35 +3414,10 @@
     )
   )
 
-  (symbol (lib_id "power:+12V") (at 271.78 127 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 0be33a7a-bdcb-455a-a11b-88b58e41a337)
-    (property "Reference" "#PWR019" (at 271.78 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+12V" (at 271.78 121.92 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 271.78 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 271.78 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9d5ccab0-fd95-43fd-8da2-b0e92081cd95))
-    (instances
-      (project "CANRxPCB"
-        (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR019") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:+3.3V") (at 74.93 27.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0c38faf7-47cc-456e-aa0a-460936d24e2b)
-    (property "Reference" "#PWR05" (at 74.93 31.75 0)
+    (property "Reference" "#PWR09" (at 74.93 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 74.93 22.86 0)
@@ -3488,7 +3433,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -3497,7 +3442,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 91.44 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1c36db94-4449-4bb1-9f7d-b9714b365a6c)
-    (property "Reference" "#FLG02" (at 91.44 62.865 0)
+    (property "Reference" "#FLG04" (at 91.44 62.865 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 91.44 57.15 90)
@@ -3513,7 +3458,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#FLG02") (unit 1)
+          (reference "#FLG04") (unit 1)
         )
       )
     )
@@ -3547,7 +3492,7 @@
   (symbol (lib_id "power:+3.3V") (at 274.32 21.59 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 22f2732c-c8a0-43d9-a4d1-f56c99570853)
-    (property "Reference" "#PWR016" (at 274.32 25.4 0)
+    (property "Reference" "#PWR037" (at 274.32 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 274.32 16.51 0)
@@ -3563,7 +3508,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
       )
     )
@@ -3572,7 +3517,7 @@
   (symbol (lib_id "power:GND") (at 142.24 107.95 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 24e262f3-e43b-44ce-b3cc-bd284369b50b)
-    (property "Reference" "#PWR029" (at 148.59 107.95 0)
+    (property "Reference" "#PWR020" (at 148.59 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 146.05 107.95 90)
@@ -3588,7 +3533,32 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR020") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+12V") (at 152.4 35.56 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2609f2fb-d14f-4701-894f-e11b8440e2ea)
+    (property "Reference" "#PWR023" (at 152.4 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12V" (at 152.4 30.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 152.4 35.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 152.4 35.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 85befdce-0ec5-49e0-a010-beda4d570d41))
+    (instances
+      (project "CANRxPCB"
+        (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -3597,7 +3567,7 @@
   (symbol (lib_id "power:GND") (at 22.86 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 267623e3-eba8-4e3e-acf0-0ca304c52d45)
-    (property "Reference" "#PWR025" (at 22.86 40.64 0)
+    (property "Reference" "#PWR02" (at 22.86 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 22.86 39.37 0)
@@ -3613,33 +3583,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR025") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 40.64 143.51 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 27a70535-9729-472a-ab51-1f38f31420c4)
-    (property "Reference" "R2" (at 40.64 143.51 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "R" (at 43.18 143.51 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 42.418 143.51 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 40.64 143.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 25fbb147-89a4-4a4b-a61f-2b0f084e206b))
-    (pin "2" (uuid 8cddac69-1e1f-4069-a3eb-60f936042f31))
-    (instances
-      (project "CANRxPCB"
-        (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "R2") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -3648,7 +3592,7 @@
   (symbol (lib_id "Device:C") (at 100.33 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 284eaf2e-15cc-4f6f-aad9-7bc415727a85)
-    (property "Reference" "C2" (at 104.14 31.75 0)
+    (property "Reference" "C3" (at 104.14 31.75 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "C" (at 104.14 34.29 0)
@@ -3665,7 +3609,33 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "C2") (unit 1)
+          (reference "C3") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 34.29 165.1 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 2a3331f2-0786-429d-8bf0-f61df6bd4314)
+    (property "Reference" "R1" (at 34.29 165.1 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "R" (at 34.29 167.64 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 34.29 166.878 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 34.29 165.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 652bb4e5-76eb-47f5-acea-f43269fde5ab))
+    (pin "2" (uuid b4019b5c-b74a-47dd-817a-7bec0353c05b))
+    (instances
+      (project "CANRxPCB"
+        (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -3674,7 +3644,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 62.23 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2b02d550-4c51-4e1a-8c8a-dc7df25ae485)
-    (property "Reference" "J4" (at 60.96 59.69 0)
+    (property "Reference" "J5" (at 60.96 59.69 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SW_CONN" (at 57.15 54.61 0)
@@ -3692,32 +3662,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "J4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 92.71 80.01 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 34a071c5-0866-4069-8c6a-050b05ed0b22)
-    (property "Reference" "#PWR023" (at 92.71 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 92.71 74.93 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 92.71 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 92.71 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid dd5b4b52-bcd1-4b8b-b9bf-3c84d26131be))
-    (instances
-      (project "CANRxPCB"
-        (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR023") (unit 1)
+          (reference "J5") (unit 1)
         )
       )
     )
@@ -3726,7 +3671,7 @@
   (symbol (lib_id "power:GNDA") (at 166.37 105.41 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 35071f70-1938-4dd9-8741-c1245b4e8ae2)
-    (property "Reference" "#PWR035" (at 160.02 105.41 0)
+    (property "Reference" "#PWR025" (at 160.02 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 162.56 105.41 90)
@@ -3742,45 +3687,19 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 53.34 163.83 0) (unit 1)
+  (symbol (lib_id "power:+12VA") (at 100.33 27.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3e2ba7c6-fba0-410f-a285-34d8a912c7a6)
-    (property "Reference" "J2" (at 55.88 163.83 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "GLED_JST" (at 55.88 166.37 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" (at 53.34 163.83 0)
+    (uuid 37349868-84f0-4ea5-b717-7b1824a4fe22)
+    (property "Reference" "#PWR016" (at 100.33 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 53.34 163.83 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid d538f47d-ec9a-4b48-9ddf-9caf7c42e2e1))
-    (pin "1" (uuid cf32389b-ee86-479b-a5b3-c2d0451ced53))
-    (instances
-      (project "CANRxPCB"
-        (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "J2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+12V") (at 100.33 27.94 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 40ad408d-73f2-4195-814c-60e2c9a9541f)
-    (property "Reference" "#PWR01" (at 100.33 31.75 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+12V" (at 100.33 22.86 0)
+    (property "Value" "+12VA" (at 100.33 22.86 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 100.33 27.94 0)
@@ -3789,11 +3708,37 @@
     (property "Datasheet" "" (at 100.33 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 98110b24-e79f-4bd5-a5fe-f76a20bf3026))
+    (pin "1" (uuid 10adce26-4042-4526-bfbe-9740bd583bab))
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR016") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 54.61 171.45 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 3e2ba7c6-fba0-410f-a285-34d8a912c7a6)
+    (property "Reference" "J3" (at 57.15 171.45 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "GLED_JST" (at 57.15 173.99 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" (at 54.61 171.45 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 54.61 171.45 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid d538f47d-ec9a-4b48-9ddf-9caf7c42e2e1))
+    (pin "1" (uuid cf32389b-ee86-479b-a5b3-c2d0451ced53))
+    (instances
+      (project "CANRxPCB"
+        (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -3842,7 +3787,7 @@
   (symbol (lib_id "CANRxLib:2M1-SP1-T1-B1-M2QE") (at 60.96 72.39 180) (unit 1)
     (in_bom yes) (on_board no) (dnp no)
     (uuid 411a5d19-50b7-46fb-9f78-1a501604ee21)
-    (property "Reference" "SW1" (at 49.53 66.04 0)
+    (property "Reference" "SW2" (at 49.53 66.04 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "2M1-SP1-T1-B1-M2QE" (at 40.64 76.2 0)
@@ -3860,7 +3805,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "SW1") (unit 1)
+          (reference "SW2") (unit 1)
         )
       )
     )
@@ -3869,7 +3814,7 @@
   (symbol (lib_id "power:+3.3V") (at 93.98 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4364647e-8b43-420f-b0f5-8718c85df76c)
-    (property "Reference" "#PWR022" (at 93.98 68.58 0)
+    (property "Reference" "#PWR013" (at 93.98 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 93.98 58.42 90)
@@ -3885,32 +3830,32 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:+3.3V") (at 40.64 138.43 0) (unit 1)
+  (symbol (lib_id "power:+3.3V") (at 40.64 146.05 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4c5db421-c28a-4707-aa8c-58321d92344b)
-    (property "Reference" "#PWR015" (at 40.64 142.24 0)
+    (property "Reference" "#PWR07" (at 40.64 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3.3V" (at 38.1 134.62 0)
+    (property "Value" "+3.3V" (at 38.1 142.24 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 40.64 138.43 0)
+    (property "Footprint" "" (at 40.64 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 40.64 138.43 0)
+    (property "Datasheet" "" (at 40.64 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f2f480ca-0433-4c67-8ba1-9b3f47105293))
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -3919,7 +3864,7 @@
   (symbol (lib_id "Device:C") (at 45.72 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4d74f6f9-6499-4ff8-adda-95bd8d7b9133)
-    (property "Reference" "C4" (at 49.53 110.49 0)
+    (property "Reference" "C1" (at 49.53 110.49 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "C" (at 49.53 113.03 0)
@@ -3936,7 +3881,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "C4") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -3945,7 +3890,7 @@
   (symbol (lib_id "power:+3.3V") (at 25.4 57.15 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 543d084b-cd93-4735-b575-7487a12ba38f)
-    (property "Reference" "#PWR09" (at 25.4 60.96 0)
+    (property "Reference" "#PWR04" (at 25.4 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 25.4 52.07 0)
@@ -3961,7 +3906,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -3970,7 +3915,7 @@
   (symbol (lib_id "power:GND") (at 105.41 78.74 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 54fdceb0-2544-4ae4-8cfb-f56d0349877b)
-    (property "Reference" "#PWR036" (at 99.06 78.74 0)
+    (property "Reference" "#PWR019" (at 99.06 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 101.6 78.74 90)
@@ -3986,7 +3931,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -3995,7 +3940,7 @@
   (symbol (lib_id "CANRxLib:TPS3847085DBVT") (at 228.6 128.27 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 580f76d8-7ced-47fd-8348-63d56444258b)
-    (property "Reference" "U1" (at 248.92 134.62 0)
+    (property "Reference" "U4" (at 248.92 134.62 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "12V_POK" (at 248.92 137.16 0)
@@ -4015,7 +3960,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "U1") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
     )
@@ -4024,7 +3969,7 @@
   (symbol (lib_id "STM32Connectors:Header_15X2_Female-") (at 115.57 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 585f0520-a3ea-4fd5-8e34-621eda895a43)
-    (property "Reference" "CN3" (at 120.65 87.63 0)
+    (property "Reference" "CN2" (at 120.65 87.63 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "15x2_FEM" (at 120.65 90.17 0)
@@ -4069,7 +4014,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "CN3") (unit 1)
+          (reference "CN2") (unit 1)
         )
       )
     )
@@ -4078,7 +4023,7 @@
   (symbol (lib_id "power:+3.3V") (at 93.98 166.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6ae10ab5-a73e-40ad-b009-943390920d13)
-    (property "Reference" "#PWR039" (at 93.98 170.18 0)
+    (property "Reference" "#PWR015" (at 93.98 170.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 93.98 161.29 0)
@@ -4094,7 +4039,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -4103,7 +4048,7 @@
   (symbol (lib_id "power:GND") (at 40.64 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 725ba8f3-67f8-423b-b35e-029ef359c877)
-    (property "Reference" "#PWR010" (at 40.64 127 0)
+    (property "Reference" "#PWR06" (at 40.64 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 40.64 124.46 0)
@@ -4119,7 +4064,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -4128,7 +4073,7 @@
   (symbol (lib_id "power:GND") (at 201.93 27.94 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7303652a-0c26-4f04-b2c9-c87cc84d1ce6)
-    (property "Reference" "#PWR013" (at 208.28 27.94 0)
+    (property "Reference" "#PWR030" (at 208.28 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 205.74 27.94 90)
@@ -4144,7 +4089,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR030") (unit 1)
         )
       )
     )
@@ -4153,7 +4098,7 @@
   (symbol (lib_id "power:GND") (at 144.78 189.23 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7b1d9233-50fe-47f3-9372-864de26f0add)
-    (property "Reference" "#PWR040" (at 151.13 189.23 0)
+    (property "Reference" "#PWR021" (at 151.13 189.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 148.59 189.23 90)
@@ -4169,7 +4114,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -4178,7 +4123,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x05") (at 50.8 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7e1c140f-407f-44f8-b560-85a10f9c39ad)
-    (property "Reference" "J3" (at 53.34 34.29 0)
+    (property "Reference" "J1" (at 53.34 34.29 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "IO_CONN" (at 53.34 36.83 0)
@@ -4198,32 +4143,32 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "J3") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 40.64 180.34 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+  (symbol (lib_id "power:GND") (at 40.64 179.07 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 83b14f5f-e979-4b41-b59f-274bdc57d4ff)
-    (property "Reference" "#PWR014" (at 40.64 186.69 0)
+    (property "Reference" "#PWR08" (at 40.64 185.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 40.64 184.15 90)
+    (property "Value" "GND" (at 41.91 184.15 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 40.64 180.34 0)
+    (property "Footprint" "" (at 40.64 179.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 40.64 180.34 0)
+    (property "Datasheet" "" (at 40.64 179.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8ce1ef10-dca7-40cf-bc4b-ca922f00bb7f))
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -4232,7 +4177,7 @@
   (symbol (lib_id "power:GND") (at 74.93 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 85167f82-4736-495a-aff9-4b48e30136d6)
-    (property "Reference" "#PWR04" (at 74.93 44.45 0)
+    (property "Reference" "#PWR010" (at 74.93 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 74.93 43.18 0)
@@ -4248,7 +4193,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -4257,7 +4202,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 30.48 34.29 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8599116b-f3e7-4d6e-9cc7-1b2027c6465a)
-    (property "Reference" "#FLG03" (at 30.48 36.195 0)
+    (property "Reference" "#FLG02" (at 30.48 36.195 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 30.48 39.37 0)
@@ -4273,32 +4218,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#FLG03") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+12V") (at 22.86 27.94 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 8f38e232-f96c-4906-adbb-6265c00ddeea)
-    (property "Reference" "#PWR024" (at 22.86 31.75 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+12V" (at 22.86 22.86 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 22.86 27.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 22.86 27.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3629a01f-eb9f-403e-bbc6-bf664f7a8f34))
-    (instances
-      (project "CANRxPCB"
-        (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR024") (unit 1)
+          (reference "#FLG02") (unit 1)
         )
       )
     )
@@ -4307,7 +4227,7 @@
   (symbol (lib_id "power:GND") (at 217.17 146.05 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8f88a592-4e2f-4f2c-a2af-4eb1df0ac886)
-    (property "Reference" "#PWR026" (at 223.52 146.05 0)
+    (property "Reference" "#PWR032" (at 223.52 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 220.98 146.05 90)
@@ -4323,7 +4243,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
       )
     )
@@ -4332,7 +4252,7 @@
   (symbol (lib_id "CANRxLib:RTCModule") (at 271.78 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 960b7900-5a9b-418e-91f8-d245d838ab5a)
-    (property "Reference" "U4" (at 270.51 99.06 0)
+    (property "Reference" "U6" (at 270.51 99.06 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "RTCModule" (at 267.97 106.68 0)
@@ -4352,7 +4272,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "U4") (unit 1)
+          (reference "U6") (unit 1)
         )
       )
     )
@@ -4389,7 +4309,7 @@
   (symbol (lib_id "power:GND") (at 274.32 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9babf6de-6a8f-4419-8141-746d020b03ad)
-    (property "Reference" "#PWR017" (at 274.32 62.23 0)
+    (property "Reference" "#PWR038" (at 274.32 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 274.32 60.96 0)
@@ -4405,7 +4325,57 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR038") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+12V") (at 92.71 80.01 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 9eccb618-9e67-479c-93ef-97c275b5abff)
+    (property "Reference" "#PWR012" (at 92.71 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12V" (at 88.9 76.2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 92.71 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 92.71 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e241ca3f-f922-4538-a399-d5ce22597e8c))
+    (instances
+      (project "CANRxPCB"
+        (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
+          (reference "#PWR012") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+12VA") (at 271.78 127 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a540b5fe-dd0a-4075-8fe0-cd29e6751757)
+    (property "Reference" "#PWR036" (at 271.78 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12VA" (at 271.78 121.92 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 271.78 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 271.78 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 101ad000-e9ed-462c-9af4-8e17ff454602))
+    (instances
+      (project "CANRxPCB"
+        (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
+          (reference "#PWR036") (unit 1)
         )
       )
     )
@@ -4414,7 +4384,7 @@
   (symbol (lib_id "power:GND") (at 175.26 107.95 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a69936d7-5c5d-4218-8d33-9857e6bfa97e)
-    (property "Reference" "#PWR027" (at 168.91 107.95 0)
+    (property "Reference" "#PWR028" (at 168.91 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 171.45 107.95 90)
@@ -4430,51 +4400,25 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:R") (at 40.64 175.26 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a9961ee2-db9f-400a-8a81-a0a11c38347b)
-    (property "Reference" "R3" (at 40.64 176.53 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "R" (at 43.18 175.26 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 42.418 175.26 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 40.64 175.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid efd25840-3de6-43b3-844c-d5cc0d3786a7))
-    (pin "2" (uuid 4f52093c-bafd-45ae-9388-6c8a895a7355))
-    (instances
-      (project "CANRxPCB"
-        (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "R3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:LED") (at 40.64 163.83 90) (unit 1)
+  (symbol (lib_id "Device:LED") (at 40.64 172.72 90) (unit 1)
     (in_bom yes) (on_board no) (dnp no)
     (uuid ace319ad-da0c-4724-bc8f-3d2f67ddbf9f)
-    (property "Reference" "D1" (at 35.56 166.37 90)
+    (property "Reference" "D2" (at 35.56 175.26 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "GLED" (at 34.29 163.83 90)
+    (property "Value" "GLED" (at 34.29 172.72 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 40.64 163.83 0)
+    (property "Footprint" "" (at 40.64 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 40.64 163.83 0)
+    (property "Datasheet" "~" (at 40.64 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8104e30f-418c-478f-8351-082289300aa0))
@@ -4482,7 +4426,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "D1") (unit 1)
+          (reference "D2") (unit 1)
         )
       )
     )
@@ -4491,7 +4435,7 @@
   (symbol (lib_id "power:+3.3V") (at 35.56 88.9 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ad6394a9-2aa7-43f4-8b88-cdbff3fa3f9c)
-    (property "Reference" "#PWR011" (at 35.56 92.71 0)
+    (property "Reference" "#PWR05" (at 35.56 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 35.56 83.82 0)
@@ -4507,7 +4451,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -4516,7 +4460,7 @@
   (symbol (lib_id "power:GND") (at 152.4 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aeff019b-3e25-496e-bcd3-c2fba67cfeaa)
-    (property "Reference" "#PWR06" (at 152.4 52.07 0)
+    (property "Reference" "#PWR024" (at 152.4 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 152.4 49.53 0)
@@ -4532,7 +4476,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -4541,7 +4485,7 @@
   (symbol (lib_id "power:GND") (at 226.06 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b6aaf312-3da5-48fa-a3c0-18eabd2a6e89)
-    (property "Reference" "#PWR018" (at 226.06 138.43 0)
+    (property "Reference" "#PWR033" (at 226.06 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 226.06 137.16 0)
@@ -4557,7 +4501,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR033") (unit 1)
         )
       )
     )
@@ -4566,7 +4510,7 @@
   (symbol (lib_id "power:+5VD") (at 93.98 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b88f573e-41d5-4e9f-aaae-aa9bf8571414)
-    (property "Reference" "#PWR038" (at 93.98 76.2 0)
+    (property "Reference" "#PWR014" (at 93.98 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VD" (at 93.98 68.58 0)
@@ -4582,7 +4526,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -4591,7 +4535,7 @@
   (symbol (lib_id "Device:C") (at 74.93 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b99ed35a-a17c-4408-8f08-2894b249bb0f)
-    (property "Reference" "C1" (at 78.74 31.75 0)
+    (property "Reference" "C2" (at 78.74 31.75 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "C" (at 78.74 34.29 0)
@@ -4608,7 +4552,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "C1") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -4617,7 +4561,7 @@
   (symbol (lib_id "power:GND") (at 151.13 26.67 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bbc57d6b-9882-4663-a7a8-a163f99fb613)
-    (property "Reference" "#PWR02" (at 157.48 26.67 0)
+    (property "Reference" "#PWR022" (at 157.48 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 154.94 26.67 90)
@@ -4633,7 +4577,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -4642,7 +4586,7 @@
   (symbol (lib_id "Device:R") (at 35.56 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bbdcc4d5-473e-4236-9cfc-8519e7379a95)
-    (property "Reference" "R1" (at 38.1 110.49 0)
+    (property "Reference" "R2" (at 38.1 110.49 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "R" (at 38.1 113.03 0)
@@ -4659,7 +4603,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "R1") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -4668,7 +4612,7 @@
   (symbol (lib_id "power:GND") (at 172.72 153.67 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bbe24def-de85-452c-9776-881e6f06c878)
-    (property "Reference" "#PWR031" (at 166.37 153.67 0)
+    (property "Reference" "#PWR027" (at 166.37 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 168.91 153.67 90)
@@ -4684,7 +4628,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -4693,7 +4637,7 @@
   (symbol (lib_id "STM32Connectors:Header_10X2_Female-") (at 187.96 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bd14e1d8-b988-4045-81e4-47dd81f5a29c)
-    (property "Reference" "CN2" (at 193.04 60.96 0)
+    (property "Reference" "CN3" (at 193.04 60.96 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "10x2_FEM" (at 193.04 63.5 0)
@@ -4728,7 +4672,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "CN2") (unit 1)
+          (reference "CN3") (unit 1)
         )
       )
     )
@@ -4737,7 +4681,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 87.63 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c17a2c92-43a3-4901-b638-a7a85729d7bc)
-    (property "Reference" "#FLG06" (at 87.63 70.485 0)
+    (property "Reference" "#FLG03" (at 87.63 70.485 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 86.36 68.58 0)
@@ -4753,7 +4697,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#FLG06") (unit 1)
+          (reference "#FLG03") (unit 1)
         )
       )
     )
@@ -4762,7 +4706,7 @@
   (symbol (lib_id "power:GND") (at 172.72 140.97 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c74d7704-780f-463b-8848-9148cd2022f1)
-    (property "Reference" "#PWR030" (at 166.37 140.97 0)
+    (property "Reference" "#PWR026" (at 166.37 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 168.91 140.97 90)
@@ -4778,7 +4722,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
     )
@@ -4787,7 +4731,7 @@
   (symbol (lib_id "power:GND") (at 215.9 76.2 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c87201ab-e48e-4fc9-bf00-0fab49d36827)
-    (property "Reference" "#PWR032" (at 222.25 76.2 0)
+    (property "Reference" "#PWR031" (at 222.25 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 219.71 76.2 90)
@@ -4803,7 +4747,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -4812,7 +4756,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 35.56 96.52 90) (unit 1)
     (in_bom yes) (on_board no) (dnp no)
     (uuid d3947a88-0399-4ba3-9c86-6631608cbaad)
-    (property "Reference" "SW2" (at 36.83 95.25 90)
+    (property "Reference" "SW1" (at 36.83 95.25 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "SW_Push" (at 36.83 97.79 90)
@@ -4829,7 +4773,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "SW2") (unit 1)
+          (reference "SW1") (unit 1)
         )
       )
     )
@@ -4838,7 +4782,7 @@
   (symbol (lib_id "power:GND") (at 91.44 140.97 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d8205ce8-be25-4e1f-97ef-5fa5e64f88af)
-    (property "Reference" "#PWR028" (at 85.09 140.97 0)
+    (property "Reference" "#PWR011" (at 85.09 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 88.9 140.97 90)
@@ -4854,7 +4798,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -4863,7 +4807,7 @@
   (symbol (lib_id "Device:C") (at 152.4 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid db8cedf5-62ab-4ee0-b34b-8effd63fa128)
-    (property "Reference" "C3" (at 156.21 39.37 0)
+    (property "Reference" "C4" (at 156.21 39.37 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "C" (at 156.21 41.91 0)
@@ -4880,25 +4824,25 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "C3") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:LED") (at 40.64 153.67 90) (unit 1)
+  (symbol (lib_id "Device:LED") (at 40.64 157.48 90) (unit 1)
     (in_bom yes) (on_board no) (dnp no)
     (uuid e3b4b5df-6057-465c-af72-d094257a35d5)
-    (property "Reference" "D2" (at 35.56 156.21 90)
+    (property "Reference" "D1" (at 35.56 160.02 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "RLED" (at 34.29 153.67 90)
+    (property "Value" "RLED" (at 34.29 157.48 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 40.64 153.67 0)
+    (property "Footprint" "" (at 40.64 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 40.64 153.67 0)
+    (property "Datasheet" "~" (at 40.64 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "2" (uuid 9456c244-04f6-41cb-a644-3abfc4a656f8))
@@ -4906,7 +4850,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "D2") (unit 1)
+          (reference "D1") (unit 1)
         )
       )
     )
@@ -4915,7 +4859,7 @@
   (symbol (lib_id "power:GND") (at 105.41 76.2 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e4fa7db5-b163-4a4b-b70a-eaa85e9f2796)
-    (property "Reference" "#PWR037" (at 99.06 76.2 0)
+    (property "Reference" "#PWR018" (at 99.06 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 101.6 76.2 90)
@@ -4931,7 +4875,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -4940,7 +4884,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 167.64 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e802f186-31d1-47a9-a365-a556966a56af)
-    (property "Reference" "#FLG04" (at 167.64 102.235 0)
+    (property "Reference" "#FLG05" (at 167.64 102.235 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 167.64 99.06 0)
@@ -4956,7 +4900,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#FLG04") (unit 1)
+          (reference "#FLG05") (unit 1)
         )
       )
     )
@@ -4965,7 +4909,7 @@
   (symbol (lib_id "CANRxLib:TCAN332D") (at 120.65 176.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e80d8c2a-4cc4-4fda-989f-a4a7f7e4c6af)
-    (property "Reference" "U6" (at 120.65 170.18 0)
+    (property "Reference" "U2" (at 120.65 170.18 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "CAN_TRx" (at 120.65 165.1 0)
@@ -4988,7 +4932,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "U6") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -4997,10 +4941,10 @@
   (symbol (lib_id "CANRxLib:LM2940T-5.0_NOPB") (at 92.71 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e9def7fb-1c40-45bb-9286-a73dd0a0144e)
-    (property "Reference" "U5" (at 123.19 26.67 0)
+    (property "Reference" "U1" (at 123.19 26.67 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Value" "12Vto5V" (at 123.19 22.86 0)
+    (property "Value" "12Vto12V" (at 123.19 22.86 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Footprint" "CANRxFPLib:NDE3" (at 92.71 29.21 0)
@@ -5015,7 +4959,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "U5") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
     )
@@ -5024,7 +4968,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 55.88 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ead5d07a-9827-4e1c-a73e-809baf147b26)
-    (property "Reference" "J5" (at 58.42 95.25 0)
+    (property "Reference" "J4" (at 58.42 95.25 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BTN_JST" (at 58.42 97.79 0)
@@ -5041,7 +4985,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "J5") (unit 1)
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -5050,7 +4994,7 @@
   (symbol (lib_id "power:GND") (at 251.46 96.52 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ec1100e8-9548-4d94-aa7d-25b485d3132f)
-    (property "Reference" "#PWR021" (at 245.11 96.52 0)
+    (property "Reference" "#PWR035" (at 245.11 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 247.65 96.52 90)
@@ -5066,7 +5010,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR035") (unit 1)
         )
       )
     )
@@ -5075,7 +5019,7 @@
   (symbol (lib_id "CANRxLib:MICROSD_SPI_OR_SDIO_CARD") (at 256.54 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ed2b3534-3de0-4f72-9cd7-2cefbba01030)
-    (property "Reference" "U2" (at 256.54 22.86 0)
+    (property "Reference" "U5" (at 256.54 22.86 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MICROSD_SDIO" (at 256.54 25.4 0)
@@ -5132,25 +5076,25 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "U2") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 53.34 152.4 0) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 53.34 156.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f0330f85-f924-4c37-94d4-61d630165bf2)
-    (property "Reference" "J1" (at 55.88 152.4 0)
+    (property "Reference" "J2" (at 55.88 156.21 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "RLED_JST" (at 55.88 154.94 0)
+    (property "Value" "RLED_JST" (at 55.88 158.75 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" (at 53.34 152.4 0)
+    (property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" (at 53.34 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 53.34 152.4 0)
+    (property "Datasheet" "~" (at 53.34 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "2" (uuid 56d15539-078a-44a2-896b-7e2630fc7f2b))
@@ -5158,7 +5102,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "J1") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -5167,7 +5111,7 @@
   (symbol (lib_id "power:GND") (at 22.86 77.47 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f38d70f0-6189-4545-a777-b57df0cf4cde)
-    (property "Reference" "#PWR08" (at 22.86 83.82 0)
+    (property "Reference" "#PWR03" (at 22.86 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 22.86 81.28 0)
@@ -5183,7 +5127,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -5192,7 +5136,7 @@
   (symbol (lib_id "power:+3.3V") (at 193.04 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f82dfa44-66f1-4a39-83a7-56cf4272f453)
-    (property "Reference" "#PWR012" (at 193.04 29.21 0)
+    (property "Reference" "#PWR029" (at 193.04 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 193.04 20.32 0)
@@ -5208,7 +5152,32 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR029") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+12VA") (at 22.86 27.94 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid f8a218aa-35e8-4a5f-b886-752ecb1651d9)
+    (property "Reference" "#PWR01" (at 22.86 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12VA" (at 22.86 22.86 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 22.86 27.94 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 22.86 27.94 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 44c48d90-3cf0-418c-8552-3fb7c9aa755d))
+    (instances
+      (project "CANRxPCB"
+        (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -5217,7 +5186,7 @@
   (symbol (lib_id "power:GND") (at 100.33 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fada5175-a6ac-471b-86c7-797c808f16d6)
-    (property "Reference" "#PWR07" (at 100.33 44.45 0)
+    (property "Reference" "#PWR017" (at 100.33 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 100.33 43.18 0)
@@ -5233,7 +5202,7 @@
     (instances
       (project "CANRxPCB"
         (path "/0e590ffe-86c9-462e-9474-79923e1af5d2"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
